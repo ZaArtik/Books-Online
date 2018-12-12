@@ -1,30 +1,42 @@
 @font-face {
-	font-family: 'MyriadPro-Regular';
-	src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+	font-family: 'SegoeUIRegular';
+	src: url('../fonts/SegoeUIRegular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-    font-family: 'susalightregular';
-    src: url('../fonts/susa-light-webfont.woff2') format('woff2'),
-         url('../fonts/susa-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Segoe WP N';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/SegoeWPN.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SegoeWP';
+  src: url('../fonts/SegoeWP.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SegoeWP.woff') format('woff'),
+  url('../fonts/SegoeWP.svg#SegoeWP') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+
 }
 
 
 
 // MIXINS
 
-@mixin helvetica($style: regular) {
-	font-family: 'HelveticaNeue';
-
-	@if $style==bold {
-		font-family: 'HelveticaNeue-Bold';
-	}
-
-	@if $style==lightbold {
-		font-family: 'HelveticaNeue-BoldItalic';
-	}
-}
+//@mixin helvetica($style: regular) {
+//	font-family: 'HelveticaNeue';
+//
+//	@if $style==bold {
+//		font-family: 'HelveticaNeue-Bold';
+//	}
+//
+//	@if $style==lightbold {
+//		font-family: 'HelveticaNeue-BoldItalic';
+//	}
+//}
