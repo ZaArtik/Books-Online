@@ -1,0 +1,28 @@
+@import "base/fonts";
+
+// adjustment variables
+$container-width    : 1024px;
+$footer-height      : 70px;
+$body-font          : 'Open sans';
+
+//colors
+$green: #79b260;
+$grey: #424242;
+$word-grey: #555454;
+
+// base
+@import "base/mixins";
+@import "base/normalize";
+@import "base/adjustment";
+
+
+
+//layout
+// @import "layout/header";
+// @import "layout/about";
+// @import "layout/advant";
+// @import "layout/view-more";
+// @import "layout/footer";
+
+//components
+// @import "components/modals";

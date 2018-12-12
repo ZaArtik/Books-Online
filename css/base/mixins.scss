@@ -1,0 +1,55 @@
+@mixin inlineblock($valign: top){
+	display: inline-block;
+	vertical-align: $valign;
+}
+
+%clearfix {
+	&:after, &:before {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+//responsive
+
+@function remd($px) {
+    @return $px / 16px + 0rem;
+}
+
+@function remt($px) {
+    @return $px / 14px + 0rem;
+}
+
+@function remp($px) {
+    @return $px / 12px + 0rem;
+}
+
+// Примеси для медиа запросов
+
+@mixin desktop {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
