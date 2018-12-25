@@ -1,0 +1,56 @@
+.adverts {
+  margin-bottom: remd(15px);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__deal {
+    width: 27%;
+    background: url('../images/adverts/background/deal_of_the_month_bg.png') 0 0 no-repeat;
+    background-size: cover;
+
+    &-desc {
+      text-align: center;
+      color: #fff;
+      padding: remd(10px) remd(15px) remd(5px);
+    }
+
+    &-tag {
+      font-size: remd(27px);
+    }
+
+    &-title {
+      font-size: remd(15px);
+      font-weight: 200;
+      margin-bottom: remd(15px);
+    }
+
+    &-discount {
+      font-family: 'Segoe WP N';
+      font-size: remd(21px);
+      font-weight: 200;
+    }
+
+    &-price {
+      font-family: 'Segoe WP N';
+      font-size: remd(29px);
+      font-weight: 500;
+      margin-bottom: remd(3px);
+    }
+
+    &-btn {
+      padding: remd(5px) remd(15px);
+      background: linear-gradient(to top, #51a551, #61c261);
+      border-top: 1px solid #52a452;
+      border-left: 1px solid #52a452;
+      font-weight: bold;
+      transition: 300ms;
+
+      &:hover {
+        color: $word-grey;
+      }
+    }
+  }
+}

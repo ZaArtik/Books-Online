@@ -1,0 +1,148 @@
+// MAIN CONTENT BLOCK
+.maincontent {
+
+  &__container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+}
+
+
+
+// CATEGORIES SIDEBAR ( FIRST BLOCK OF MAIN CONTENT )
+
+.categories {
+  width: 20%;
+  padding-bottom: remd(13px);
+  border: 1px solid #d6d6d6;
+  color: $word-grey;
+
+  &__title-main {
+    padding: remd(5px) remd(17px) remd(3px);
+    margin-bottom: remd(5px);
+    font-family: 'SegoeWP-light';
+    font-size: remd(24px);
+    font-weight: normal;
+  }
+
+  &__item {
+    margin-bottom: remd(5px);
+  }
+
+  &__title {
+    display: block;
+    font-family: 'Segoe WP N';
+    font-size: remd(17px);
+    font-weight: bold;
+
+    &-link {
+      padding: remd(5px) remd(17px);
+      display: block;
+      color: $word-grey;
+      transition: 300ms;
+
+      &:hover {
+        background: linear-gradient(to top, #7ab461, #92d774);
+        color: #fff;
+      }
+
+      &--all {      margin-bottom: 0;
+        text-transform: uppercase;
+      }
+
+      &--active {
+        background: linear-gradient(to top, #7ab461, #92d774);
+        color: #fff;
+      }
+    }
+  }
+
+  &__type {
+
+    &-list {
+      padding: 0 remd(17px);
+    }
+
+    &-item {
+      display: block;
+    }
+
+    &-link {
+      display: block;
+      padding: remd(5px) 0;
+      color: $word-grey;
+      border-bottom: 1px solid #e6e7e8;
+    }
+  }
+
+  // CODE TO CHOOSE THE LAST ITEM OF LAST LIST AND REMOVE BORDER-BOTTOM OF THIS ITEM
+  &__item:last-child {
+      .categories__type-list {
+        .categories__type-item:last-child {
+          .categories__type-link {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+}
+
+
+
+// BOOKS SELLING STYLES ( SECOND BLOCK OF MAIN CONTENT )
+
+.books-sell {
+  width: 78%;
+
+  &__type-menu {
+    display: flex;
+    margin-bottom: -1px;
+
+    &-item {
+      display: block;
+      background: linear-gradient(to top, #e2e2e2, #f9f9f9);
+      -webkit-box-shadow: inset 1px 0px 0px 0px rgba(255,255,255,1);
+      -moz-box-shadow: inset 1px 0px 0px 0px rgba(255,255,255,1);
+      box-shadow: inset 1px 0px 0px 0px rgba(255,255,255,1);
+
+      &:first-child {
+        border-left: 1px solid #d6d6d6;
+      }
+    }
+
+    &-link {
+      font-family: 'HelveticaLTStd-Light';
+      display: block;
+      border-top: 1px solid #d6d6d6;
+      border-right: 1px solid #d6d6d6;
+      border-bottom: 1px solid #d6d6d6;
+      padding: remd(10px) remd(20px);
+      color: $word-grey;
+      font-size: remd(17px);
+
+      &:hover {
+        font-family: 'HelveticaLTStd-Roman';
+        color: #464646;
+        background: #fff;
+        border-bottom: 1px solid #fff;
+      }
+
+      &--active {
+        font-family: 'HelveticaLTStd-Roman';
+        color: #464646;
+        background: #fff;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+
+  &__container {
+    padding: remd(25px) remd(25px) 0;
+    border: 1px solid #d6d6d6;
+  }
+
+  &__books {
+    margin-bottom: remd(35px);
+  }
+}

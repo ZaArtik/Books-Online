@@ -15,63 +15,228 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
+<div class="wrapper">
 
-        <!-- HEADER -->
-        <header class="header">
-            <nav class="main-nav">
-                <div class="container">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Sign in</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">My Account</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Order Status</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Help</a></li>
+    <!-- HEADER -->
+    <header class="header">
+
+        <!--HEADER MAIN NAVIGATION-->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Sign in</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">My Account</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Order Status</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Help</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--MAIN HEADER BLOCK (LOGO, SEARCH, BASKET AND WISH LIST-->
+        <section class="main-header">
+            <div class="container main-header__container">
+                <div class="main-header__logo">
+                    <img src="images/header/logo.png" alt="" class="main-header__logo-image">
+                </div>
+                <div class="search">
+                    <input type="text" class="search__input">
+                    <button class="search__btn">
+                        <span class="search__btn-text">Search</span>
+                    </button>
+                </div>
+                <div class="cart">
+                    <div class="cart__basket">
+                        <div class="cart__basket-container">
+                            <span class="cart__basket-text">Your cart</span>
+                            <small class="cart__basket-items">(2 items)</small>
+                        </div>
+                    </div>
+                    <div class="cart__price">
+                        <div class="cart__price-item">$125.0</div>
+                        <button class="cart__price-button main-button">Checkout</button>
+                    </div>
+                </div>
+                <a href="#" class="wish-list">
+                    <div class="wish-list__pic">
+                        <img src="images/Header/icons/wish_list.png" alt="" class="wish-list__pic-item">
+                    </div>
+                    <div class="wish-list__text">
+                        <div class="wish-list__number">20</div>
+                        <span>Wish list</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- HEADER NAV WITH TYPES-->
+        <nav class="nav-type">
+            <div class="container">
+                <ul class="nav-type__list">
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Computers</a></li>
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Cooking</a></li>
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Education</a></li>
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Fiction</a></li>
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Health</a></li>
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Mathematics</a></li>
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Medical</a></li>
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Reference</a></li>
+                    <li class="nav-type__item"><a href="#" class="nav-type__link">Science</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ADVERTS -->
+    <section class="adverts">
+        <div class="container adverts__container">
+            <div class="slider">
+                <div class="slider__viewport">
+                    <ul class="slider__list">
+                        <li class="slider__item">
+                            <a href="#" class="slider__link">
+                                <div class="slider__desc">
+                                    <h3 class="slider__title">A Wanted man</h3>
+                                    <p class="slider__series">(Jack Reacher #17)</p>
+                                    <h4 class="slider__author">By Lee Child</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slider__item">
+                            <a href="#" class="slider__link">
+                                <div class="slider__desc">
+                                    <h3 class="slider__title">A Wanted CHLEN</h3>
+                                    <p class="slider__series">(Jack Reacher #18)</p>
+                                    <h4 class="slider__author">By Debik</h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slider__item">
+                            <a href="#" class="slider__link">
+                                <div class="slider__desc">
+                                    <h3 class="slider__title">A Wanted Boris</h3>
+                                    <p class="slider__series">(Jack Reacher #19)</p>
+                                    <h4 class="slider__author">By Sasha</h4>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="slider__control-btn slider__control-btn--next"></button>
+                    <button class="slider__control-btn slider__control-btn--prev"></button>
+                </div>
+            </div>
+            <div class="adverts__deal">
+                <div class="adverts__deal-desc">
+                    <h3 class="adverts__deal-tag">Deal of the Month</h3>
+                    <h4 class="adverts__deal-title">The Human Face of Big Data</h4>
+                    <img src="images/adverts/deal_of_the_month_image.png" alt="" class="adverts__deal-img">
+                    <div class="adverts__deal-discount">Save 45% Today</div>
+                    <div class="adverts__deal-price">$27.50</div>
+                    <button class="adverts__deal-btn main-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT BLOCK-->
+    <main class="maincontent">
+        <div class="container maincontent__container">
+
+            <!-- CATEGORIES SIDEBAR BLOCK-->
+            <aside class="categories">
+                <h3 class="categories__title-main">Categories</h3>
+                <h4 class="categories__title"><a href="#"
+                                                 class="categories__title-link categories__title-link--all categories__title-link--active">All</a>
+                </h4>
+                <ul class="categories__title-list">
+                    <li class="categories__item">
+                        <h4 class="categories__title"><a href="#" class="categories__title-link">Fiction &
+                            Literature</a></h4>
+                        <ul class="categories__type-list">
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Children</a>
+                            </li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Science
+                                Fiction</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Fantasy</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Mystery</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Romance</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Horror</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Poetry</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Literature</a>
+                            </li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Crime</a></li>
+                        </ul>
+                    </li>
+                    <li class="categories__item">
+                        <h4 class="categories__title"><a href="#" class="categories__title-link">Non - Fiction</a></h4>
+                        <ul class="categories__type-list">
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Comic</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Cook</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Psychology</a>
+                            </li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Medical</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Art</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Photography</a>
+                            </li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Law</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">History</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Business</a>
+                            </li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Computer</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories__item">
+                        <h4 class="categories__title"><a href="#" class="categories__title-link">Other</a></h4>
+                        <ul class="categories__type-list">
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Baby</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Sex</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Travel</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Science</a></li>
+                            <li class="categories__type-item"><a href="#" class="categories__type-link">Sports</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- BOOKS SELLING BLOCK -->
+            <section class="books-sell">
+                <ul class="books-sell__type-menu">
+                    <li class="books-sell__type-menu-item"><a href="#" class="books-sell__type-menu-link books-sell__type-menu-link--active">Best sellers</a></li>
+                    <li class="books-sell__type-menu-item"><a href="#" class="books-sell__type-menu-link">New Arrivals</a></li>
+                    <li class="books-sell__type-menu-item"><a href="#" class="books-sell__type-menu-link">Used Books</a>
+                    </li>
+                    <li class="books-sell__type-menu-item"><a href="#" class="books-sell__type-menu-link">Specials Offers</a></li>
+                </ul>
+                <div class="books-sell__container">
+                    <ul class="books-sell__books">
+                        <li class="books-sell__books-item">
+                            <div class="books-sell__books-img-wrapper">
+                                <img src="" alt="Book" class="books-sell__books-img">
+                            </div>
+                            <h5 class="book-sell__books-title"></h5>
+                            <div class="books-sell__books-price"></div>
+                        </li>
+                    </ul>
+                    <ul class="books-sell__pages">
+                        <li class="books-sell__pages-item"><a href="#" class="books-sell__pages-link"></a></li>
+                        <li class="books-sell__pages-item"><a href="#" class="books-sell__pages-link"></a></li>
+                        <li class="books-sell__pages-item"><a href="#" class="books-sell__pages-link"></a></li>
+                        <li class="books-sell__pages-item"><a href="#" class="books-sell__pages-link"></a></li>
+                        <li class="books-sell__pages-item"><a href="#" class="books-sell__pages-link"></a></li>
+                        <li class="books-sell__pages-item"><a href="#" class="books-sell__pages-link"></a></li>
                     </ul>
                 </div>
-            </nav>
-            <section class="main-header">
-                <div class="container main-header__container">
-                    <div class="main-header__logo">
-                        <img src="images/header/logo.png" alt="" class="main-header__logo-image">
-                    </div>
-                    <div class="search">
-                        <input type="text" class="search__input">
-                        <button class="search__btn">
-                            <span class="search__btn-text">Search</span>
-                        </button>
-                    </div>
-                    <div class="cart">
-                        <div class="cart__basket">
-                            <div class="cart__basket-container">
-                                <span class="cart__basket-text">Your cart</span>
-                                <small class="cart__basket-items">(2 items)</small>
-                            </div>
-                        </div>
-                        <div class="cart__price">
-                            <div class="cart__price-item">$125.0</div>
-                            <button class="cart__price-button main-button">Checkout</button>
-                        </div>
-                    </div>
-                    <div class="wish-list">
-                        <div class="wish-list__pic">
-                            <img src="images/Header/icons/wish_list.png" alt="" class="wish-list__pic-item">
-                        </div>
-                        <div class="wish-list__text">
-                            <div class="wish-list__number">20</div>
-                            <span>Wish list</span>
-                        </div>
-                    </div>
-                </div>
             </section>
-        </header>
-    </div>
+        </div>
+    </main>
+</div>
 
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Jquery -->
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
 
-   <!-- Bootstrap scripts -->
+<!-- Bootstrap scripts -->
 </body>
 </html>

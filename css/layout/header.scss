@@ -1,3 +1,7 @@
+.header {
+  margin-bottom: remd(15px);
+}
+
 // --------------- MAIN NAVIGATION MENU ------------
 .main-nav {
   padding: remd(5px);
@@ -20,6 +24,12 @@
   &__link {
     color: #fff;
     font-weight: 400;
+    opacity: 0.8;
+    transition: 300ms;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -32,7 +42,6 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -44,13 +53,14 @@
   padding: remd(5px) remd(5px);
   background: $green;
   border-radius: 2px;
+  margin-left: remd(48px);
 
   &__input {
     width: 71%;
     outline: none;
     border: none;
     border-radius: 2px;
-    padding: remd(5px) 0;
+    padding: remd(5px) remd(5px);
     display: inline-block;
     vertical-align: middle;
   }
@@ -71,6 +81,17 @@
       content: url("../images/Header/icons/search.png");
       display: inline-block;
       vertical-align: bottom;
+      transition: 300ms;
+    }
+
+    &:hover {
+      &::before {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
 
     &-text {
@@ -89,6 +110,7 @@
   flex-direction: column;
   border-right: 1px solid #c2c2c2;
   padding-right: remd(7px);
+  margin-left: remd(55px);
 
   &__basket {
     margin-bottom: remd(5px);
@@ -132,7 +154,6 @@
       border-left: 1px solid #232323;
       box-shadow: inset 1px 1px 0px 0px rgba(104,104,104,1);
       margin-left: remd(10px);
-      transition: 300ms;
 
       &:hover {
         background: linear-gradient(to top, #414141, #fff);
@@ -141,7 +162,10 @@
   }
 }
 
+
+// --------------- WISH-LIST ------------
 .wish-list {
+  margin-left: remd(28px);
 
   &__pic {
     text-align: center;
@@ -163,5 +187,39 @@
     background: $green;
     border-radius: 20px;
     color: #fff;
+  }
+}
+
+
+// --------------- NAV WITH TYPES OF BOOKS------------
+.nav-type {
+  border-bottom: 1px solid #cecece;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    display: block;
+    padding: remd(10px) remd(18px);
+    font-size: remd(19px);
+    color: $word-grey;
+    transition: 300ms;
+
+    &:hover {
+      background: linear-gradient(to top, #7ab461, #92d673);
+      color: #fff;
+    }
+
+    &:active {
+      background: linear-gradient(to top, #7ab461, #92d673);
+      color: blue;
+    }
   }
 }

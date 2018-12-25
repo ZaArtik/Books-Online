@@ -14,15 +14,30 @@
 
 @font-face {
   font-family: 'SegoeWP';
-  src: url('../fonts/SegoeWP.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/SegoeWP.woff') format('woff'),
-  url('../fonts/SegoeWP.svg#SegoeWP') format('svg');
+  src: url('../fonts/SegoeWP.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
+  font-family: 'SegoeWP-light';
+  src: url('../fonts/SegoeWP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'HelveticaLTStd-Light';
+  src: url('../fonts/HelveticaLTStd-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Roman';
+  src:url('../fonts/HelveticaLTStd-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 

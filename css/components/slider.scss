@@ -1,0 +1,105 @@
+// ------------------ HOME PAGE SLIDER -------------------
+.slider {
+  width: 72%;
+  height: 327px;
+
+  &__viewport {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__list {
+    position: absolute;
+    width: (100%*3);
+    height: 100%;
+    transition: 1000ms;
+  }
+
+  &__item {
+    float: left;
+    width: calc(100%/3);
+    height: 100%;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    height: 100%;
+
+    &:nth-child(1) {
+      background: url('../images/adverts/slider/news_1.png') 0 0 no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+    &:nth-child(2) {
+      background: url('../images/adverts/slider/news_1.png') 0 0 no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+    &:nth-child(3) {
+      background: url('../images/adverts/slider/news_1.png') 0 0 no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+
+  // --------------- DESCRIPTION FOR CURRENT SLIDE -----------------
+  &__desc {
+    position: absolute;
+      top: 40%;
+      right: 75px;
+    width: 320px;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: remd(47px);
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  &__series {
+    font-size: remd(25px);
+    margin-bottom: remd(5px);
+  }
+
+  &__author {
+    font-size: remd(21px);
+    font-weight: bold;
+  }
+
+  // ----------------- CONTROL BUTTONS FOR SLIDER -----------------
+  &__control-btn {
+    position: absolute;
+      top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+
+    &--prev {
+      left: 13px;
+      background: rgba(#000, 0.5) url('../images/adverts/slider/control_btn_prev.png') 40% 50% no-repeat;
+    }
+
+    &--next {
+      right: 13px;
+      background: rgba(#000, 0.5) url('../images/adverts/slider/control_btn_next.png') 60% 50% no-repeat;
+    }
+  }
+}

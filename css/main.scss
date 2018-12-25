@@ -18,11 +18,9 @@ $word-grey: #6d6d6d;
 //components
 // @import "components/modals";
 @import "components/buttons";
+@import "components/slider";
 
 //layout
- @import "layout/header";
-// @import "layout/about";
-// @import "layout/advant";
-// @import "layout/view-more";
-// @import "layout/footer";
-
+@import "layout/header";
+@import "layout/adverts";
+@import "layout/maincontent";

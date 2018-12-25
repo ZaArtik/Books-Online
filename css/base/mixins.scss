@@ -20,14 +20,6 @@
     @return $px / 16px + 0rem;
 }
 
-@function remt($px) {
-    @return $px / 14px + 0rem;
-}
-
-@function remp($px) {
-    @return $px / 12px + 0rem;
-}
-
 // Примеси для медиа запросов
 
 @mixin desktop {
