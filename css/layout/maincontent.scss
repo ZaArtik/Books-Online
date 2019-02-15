@@ -13,7 +13,7 @@
 // CATEGORIES SIDEBAR ( FIRST BLOCK OF MAIN CONTENT )
 
 .categories {
-  width: 20%;
+  width: 19%;
   padding-bottom: remd(13px);
   border: 1px solid #d6d6d6;
   color: $word-grey;
@@ -93,7 +93,7 @@
 // BOOKS SELLING STYLES ( SECOND BLOCK OF MAIN CONTENT )
 
 .books-sell {
-  width: 78%;
+  width: 80%;
 
   &__type-menu {
     display: flex;
@@ -124,14 +124,14 @@
       &:hover {
         font-family: 'HelveticaLTStd-Roman';
         color: #464646;
-        background: #fff;
+        background: #fdfdfd;
         border-bottom: 1px solid #fff;
       }
 
       &--active {
         font-family: 'HelveticaLTStd-Roman';
         color: #464646;
-        background: #fff;
+        background: #fdfdfd;
         border-bottom: 1px solid #fff;
       }
     }
@@ -140,9 +140,108 @@
   &__container {
     padding: remd(25px) remd(25px) 0;
     border: 1px solid #d6d6d6;
+    background: #fdfdfd;
+    width: 100%;
   }
 
   &__books {
     margin-bottom: remd(35px);
+    width: 100%;
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 14%;
+      position: relative;
+      margin-left: 7%;
+      margin-bottom: remd(30px);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:nth-child(5n + 1) {
+        margin-left: 0;
+      }
+    }
+
+    &-img-wrapper {
+      padding: 5px;
+      padding-bottom: 0;
+      margin-bottom: remd(10px);
+      background: #fff;
+      border-radius: 7px;
+      -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    }
+
+    &-disc {
+      display: none;
+      position: absolute;
+        right: -20px;
+        top: -10px;
+      width: 60px;
+      height: 60px;
+      background: #f05356;
+      border-radius: 50%;
+      color: #fff;
+      font-size: remd(13px);
+
+      &-price {
+        font-size: remd(19px);
+        font-weight: bold;
+      }
+
+      &--active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+
+    &-img {
+      height: 100%;
+      width: 100%;
+    }
+
+    &-title {
+      margin-bottom: remd(5px);
+      text-align: center;
+      font-family: 'Segoe WP N';
+      font-size: remd(15px);
+      color: $word-grey;
+      font-weight: 600;
+    }
+
+    &-price {
+      text-align: center;
+      font-family: 'HelveticaLTStd-Roman';
+      font-size: remd(21px);
+      color: #f26a6d;
+      word-break: break-all;
+    }
+  }
+
+//  NUMBER MENU
+  &__pages {
+    margin-left: auto;
+    background: #000;
+    display: flex;
+    justify-content: flex-end;
+
+
+    &-item {
+      display: block;
+
+    }
+
+    &-link {
+      display: block;
+      padding: remd(10px) remd(7px);
+      border-bottom: 4px solid $green;
+    }
   }
 }

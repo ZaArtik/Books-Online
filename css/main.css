@@ -728,7 +728,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between; }
 
 .categories {
-  width: 20%;
+  width: 19%;
   padding-bottom: 0.8125rem;
   border: 1px solid #d6d6d6;
   color: #6d6d6d; }
@@ -772,7 +772,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 0; }
 
 .books-sell {
-  width: 78%; }
+  width: 80%; }
   .books-sell__type-menu {
     display: flex;
     margin-bottom: -1px; }
@@ -796,15 +796,85 @@ h1, h2, h3, h4, h5, h6 {
       .books-sell__type-menu-link:hover {
         font-family: 'HelveticaLTStd-Roman';
         color: #464646;
-        background: #fff;
+        background: #fdfdfd;
         border-bottom: 1px solid #fff; }
       .books-sell__type-menu-link--active {
         font-family: 'HelveticaLTStd-Roman';
         color: #464646;
-        background: #fff;
+        background: #fdfdfd;
         border-bottom: 1px solid #fff; }
   .books-sell__container {
     padding: 1.5625rem 1.5625rem 0;
-    border: 1px solid #d6d6d6; }
+    border: 1px solid #d6d6d6;
+    background: #fdfdfd;
+    width: 100%; }
   .books-sell__books {
-    margin-bottom: 2.1875rem; }
+    margin-bottom: 2.1875rem;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap; }
+    .books-sell__books-item {
+      width: 14%;
+      position: relative;
+      margin-left: 7%;
+      margin-bottom: 1.875rem; }
+      .books-sell__books-item:first-child {
+        margin-left: 0; }
+      .books-sell__books-item:nth-child(5n + 1) {
+        margin-left: 0; }
+    .books-sell__books-img-wrapper {
+      padding: 5px;
+      padding-bottom: 0;
+      margin-bottom: 0.625rem;
+      background: #fff;
+      border-radius: 7px;
+      -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75); }
+    .books-sell__books-disc {
+      display: none;
+      position: absolute;
+      right: -20px;
+      top: -10px;
+      width: 60px;
+      height: 60px;
+      background: #f05356;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 0.8125rem; }
+      .books-sell__books-disc-price {
+        font-size: 1.1875rem;
+        font-weight: bold; }
+      .books-sell__books-disc--active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+    .books-sell__books-img {
+      height: 100%;
+      width: 100%; }
+    .books-sell__books-title {
+      margin-bottom: 0.3125rem;
+      text-align: center;
+      font-family: 'Segoe WP N';
+      font-size: 0.9375rem;
+      color: #6d6d6d;
+      font-weight: 600; }
+    .books-sell__books-price {
+      text-align: center;
+      font-family: 'HelveticaLTStd-Roman';
+      font-size: 1.3125rem;
+      color: #f26a6d;
+      word-break: break-all; }
+  .books-sell__pages {
+    margin-left: auto;
+    background: #000;
+    display: flex;
+    justify-content: flex-end; }
+    .books-sell__pages-item {
+      display: block; }
+    .books-sell__pages-link {
+      display: block;
+      padding: 0.625rem 0.4375rem;
+      border-bottom: 4px solid #79b260; }
